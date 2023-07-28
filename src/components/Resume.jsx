@@ -1,4 +1,8 @@
 const Resume = () => {
-  return <div>Resume</div>;
+  return (
+    <div className="section" id="resume">
+      Resume
+    </div>
+  );
 };
 export default Resume;

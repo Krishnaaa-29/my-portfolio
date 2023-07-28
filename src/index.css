@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
 :root {
+  /* colors */
+  --white: #fff;
+  --light-grey: #f5f5f7;
+  --blue: #0064ff;
+  --dark: #1d1d1f;
+  --light-dark: #535355;
+
+  --darkText-1: #1d1d1f;
+  --darkText-2: #535355;
+  --lightText-1: #fff;
+  --lightText-2: #f5f5f7;
+
   /* box shadow*/
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   --shadow-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -9,6 +21,8 @@
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --shadow-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  --transition: 0.3s ease-in-out all;
 }
 
 body {
@@ -19,7 +33,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
   scroll-behavior: smooth;
-  height: 200vh;
 }
 * {
   box-sizing: border-box;
@@ -27,4 +40,72 @@ body {
 html,
 body {
   overflow-x: hidden;
+}
+
+a,
+li,
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.light-bg-1 {
+  background: var(--white);
+}
+
+.light-bg-2 {
+  background: var(--light-grey);
+}
+
+.dark-bg-1 {
+  background: var(--light-dark);
+}
+
+.dark-bg-2 {
+  background: var(--dark);
+}
+
+.lightText-1 {
+  color: var(--lightText-1);
+}
+
+.lightText-2 {
+  color: var(--lightText-2);
+}
+
+.darkText-1 {
+  color: var(--darkText-1);
+}
+
+.darkText-2 {
+  color: var(--darkText-2);
+}
+
+/* 
+============
+PROJECT
+============
+*/
+
+.section-margin {
+  margin: 0 2rem;
+}
+
+.section-padding {
+  padding: 2rem 8rem;
+}
+
+/* 
+===QUOTE===
+*/
+
+.quote {
+  max-width: 85vw;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: -2rem;
+}
+
+.section {
+  min-height: 100vh;
 }

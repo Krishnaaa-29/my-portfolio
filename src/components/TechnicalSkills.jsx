@@ -1,4 +1,8 @@
 const TechnicalSkills = () => {
-  return <div id="skills">TechnicalSkills</div>;
+  return (
+    <div className="section" id="skills">
+      TechnicalSkills
+    </div>
+  );
 };
 export default TechnicalSkills;

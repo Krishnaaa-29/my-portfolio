@@ -1,25 +1,43 @@
 import { styled } from "styled-components";
 import { HiOutlineSun, HiOutlineMoon } from "react-icons/hi";
 import { FaHome } from "react-icons/fa";
-
+import { Link } from "react-scroll";
 const Navbar = () => {
   return (
     <Wrapper>
       <div className="nav-center" id="navbar">
-        <div className="home">
-          <a href="#">
+        <div className="home nav-links">
+          <Link to="home" smooth={true} spy={true} className="lightText-1">
             <FaHome className="home-icon" />
-          </a>
+          </Link>
         </div>
-        <div className="fields">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#resume">Resume</a>
-          <a href="#contact">
-            <span className="contact">Contact</span>
-          </a>
-        </div>
+        <ul className="fields">
+          <li className="nav-links">
+            <Link to="about" smooth={true} spy={true}>
+              About
+            </Link>
+          </li>
+          <li className="nav-links">
+            <Link to="skills" smooth={true} spy={true}>
+              Skills
+            </Link>
+          </li>
+          <li className="nav-links">
+            <Link to="projects" smooth={true} spy={true}>
+              Projects
+            </Link>
+          </li>
+          <li className="nav-links">
+            <Link to="resume" smooth={true} spy={true}>
+              Resume
+            </Link>
+          </li>
+          <li className="contact">
+            <Link to="contact" smooth={true} spy={true} className="scroll-btn">
+              Contact
+            </Link>
+          </li>
+        </ul>
         <div className="mode-btn">
           <button type="button" className="toggle-btn">
             <HiOutlineSun />
@@ -34,7 +52,6 @@ const Wrapper = styled.article`
   a {
     text-decoration: none;
     font-size: 1rem;
-    color: #1d1d1f;
   }
 
   .nav-center {
@@ -63,15 +80,28 @@ const Wrapper = styled.article`
     gap: 2.5rem;
   }
 
+  .nav-links {
+    cursor: pointer;
+  }
+
+  .nav-links:hover {
+    color: var(--blue);
+    scale: 1.15;
+    transition: var(--transition);
+  }
+  .nav-links .active {
+    color: var(--blue);
+  }
   .home-icon {
-    color: #0064ff;
+    color: var(--blue);
     font-size: 1.25rem;
   }
-  .contact {
-    background: #0064ff;
+  .scroll-btn {
+    background: var(--blue);
     padding: 5px 10px;
     color: #fff;
     border-radius: 50px;
+    cursor: pointer;
   }
 
   .toggle-btn {

@@ -1,4 +1,4 @@
 const Footer = () => {
-  return <div>Footer</div>;
+  return <div style={{ background: "lightgrey" }}>All rights reserved</div>;
 };
 export default Footer;
