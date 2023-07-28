@@ -14,14 +14,14 @@ const Home = () => {
           </div>
           <div className="home-content">
             <p className="darkText-2">hi there, I am</p>
-            <h3 className="darkText-1">krishna kulshreshtha</h3>
+            <h2 className="darkText-1">krishna kulshreshtha</h2>
             <TypeAnimation
               sequence={["Front-End Developer", 3000, "Front-End", 1000]}
               wrapper="span"
               cursor={true}
               repeat={Infinity}
               style={{
-                fontSize: "3.5rem",
+                fontSize: "4rem",
                 fontWeight: "700",
               }}
               className="animation"
@@ -81,7 +81,7 @@ const Wrapper = styled.article`
       background-image: -webkit-linear-gradient(0deg, #ff1b6b 30%, #45caff 75%);
       background-clip: text;
       -webkit-background-clip: text;
-      text-fill-color: transparent;
+      -text-fill-color: transparent;
       -webkit-text-fill-color: transparent;
     }
 
@@ -93,24 +93,19 @@ const Wrapper = styled.article`
       align-items: center;
       justify-content: center;
       text-align: center;
-      h3 {
-        font-size: 2rem;
+      h2 {
         margin-top: -1rem;
         margin-bottom: 1rem;
-      }
-
-      h1 {
-        font-size: 3rem;
       }
 
       p {
         font-size: 0.9rem;
         max-width: 550px;
         line-height: 1.5;
+        margin-bottom: 1rem;
       }
 
       .explore-container {
-        margin-top: 2rem;
         max-width: 125px;
         margin: 0 auto;
         .explore-btn {

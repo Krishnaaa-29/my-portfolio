@@ -18,13 +18,13 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-links">
-            <Link to="skills" smooth={true} spy={true}>
-              Skills
+            <Link to="projects" smooth={true} spy={true}>
+              Projects
             </Link>
           </li>
           <li className="nav-links">
-            <Link to="projects" smooth={true} spy={true}>
-              Projects
+            <Link to="skills" smooth={true} spy={true}>
+              Skills
             </Link>
           </li>
           <li className="nav-links">
